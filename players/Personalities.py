@@ -17,59 +17,61 @@ import random
 
 
 class Personality:
-	def __init__(self):
-		pass
-	
-	def make_choice(self, options):
-		pass
+    def __init__(self):
+        pass
+    
+    def make_choice(self, options):
+        pass
 
 
 class StupidAI(Personality):
-	def __init__(self):
-		self.choice = []
-		self.options = []
-	
-	def make_choice(self, options):
-		self.choice.append([0, options])
-		return 0
+    def __init__(self):
+        self.choice = []
+        self.options = []
+    
+    def make_choice(self, options):
+        self.choice.append([ch, [(o[0], o[1].id) for o in options]])
+        return 0
 
 
 class RandomAI(Personality):
-	def __init__(self):
-		self.choice = []
-		self.options = []
-	
-	def make_choice(self, options):
-		ch = random.randint(0, len(options) - 1)
-		self.choice.append([ch, options])
-		return ch
+    def __init__(self):
+        self.choice = []
+        self.options = []
+    
+    def make_choice(self, options):
+        ch = random.randint(0, len(options) - 1)
+        self.choice.append([ch, [(o[0], o[1].id) for o in options]])
+        return ch
 
 
 class GoodAI(Personality):
-	def __init__(self):
-		self.choice = []
-	
-	def make_choice(self, options):
-		ch = 0
-		for i in options:
-			if i[1].is_science_card():
-				if i[0] == 0:
-					ch = options.index(i)
-				else:
-					for o in options:
-						if o[1].is_resource_card() and o[0] == 0:
-							ch = options.index(o)
-					ch = 0
-		self.choice.append([ch, options])
-		return ch
-		# return random.randint(0, len(options) - 1)
+    def __init__(self):
+        self.choice = []
+    
+    def make_choice(self, options):
+        ch = 0
+        for i in options:
+            if i[1].is_science_card():
+                if i[0] == 0:
+                    ch = options.index(i)
+            else:
+                for o in options:
+                    if o[1].is_resource_card() and o[0] == 0:
+                        ch = options.index(o)
+                    else:
+                        ch = 0
+        self.choice.append([ch, [(o[0], o[1].id) for o in options]])
+        return ch
+        # return random.randint(0, len(options) - 1)
+
 
 class Human(Personality):
-	def __init__(self):
-		self.choice = []
-	
-	def make_choice(self, options):
-		ch = int(stdin.readline())
-		self.choice.append([ch, options])
-		return ch
+    def __init__(self):
+        self.choice = []
+    
+    def make_choice(self, options):
+        ch = int(stdin.readline())
+        self.choice.append([ch, [(o[0], o[1].id) for o in options]])
+        return ch
 

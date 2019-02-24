@@ -48,7 +48,6 @@
 1, 7, baths, blue, S, -, aqueduct, 3
 1, 7, pawnshop, blue, -, -, aqueduct, 3
 1, 7, stockade, red, W, -, -, 1
-
 2, 3, sawmill, brown, $, -, -, WW
 2, 3, foundry, brown, $, -, -, OO
 2, 3, brickyard, brown, $, -, -, BB
@@ -98,7 +97,6 @@
 2, 7, school, green, WP, -, academy | study, T
 2, 7, walls, red, SSS, -, fortifications, 2
 2, 7, training ground, red, OOW, -, circus, 2
-
 3, 3, gardens, blue, BBW, statue, -, 5
 3, 3, senate, blue, WWSO,  library, -, 6
 3, 3, town hall, blue, SSOG, -, -, 6

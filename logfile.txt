@@ -1,78 +1,78 @@
 Starting age I
-AI1 played [37mpress P[0m 
-AI2 played [34maltar 2 points[0m 
-AI3 played [33mtimer yard S/W[0m paying $1 to the bank.
 AI1 played [37mloom L[0m 
-AI2 discarded an age I card for $3
-AI3 discarded an age I card for $3
+AI2 played [37mglassworks G[0m 
+AI3 played [92mapothecary C[0m paying $2 to the player to his right.
+AI1 played [33more vein O[0m 
+AI2 played [37mpress P[0m 
+AI3 played [33mstone pit S[0m 
 AI1 played [33mlumber yard W[0m 
-AI2 discarded an age I card for $3
-AI3 played [1;33mmarketplace trade-${GLP} <>[0m 
-AI1 played [33mclay pool B[0m 
-AI2 played [33mstone pit S[0m 
-AI3 played [33mclay pit B/O[0m paying $1 to the bank.
-AI1 played [37mglassworks G[0m 
-AI2 played [92mworkshop G[0m paying $2 to the player to his left.
-AI3 played [33more vein O[0m 
-AI1 played [34mtheatre 2 points[0m 
-AI2 played [31mguard tower 1[0m paying $2 to the player to his right.
+AI2 played [92mworkshop G[0m 
+AI3 played [33mtimer yard S/W[0m paying $1 to the bank.
+AI1 played [92mscriptorium T[0m paying $2 to the player to his right.
+AI2 played [1;33mmarketplace trade-${GLP} <>[0m 
 AI3 discarded an age I card for $3
-AI1 and AI3 both have 0 strength, No points awarded.
-AI1 with 0 shields was defeated by AI2 with 1 shields losing -1 points.
-AI2 with 1 shields defeated AI1 with 0 shields taking 1 points.
-AI2 with 1 shields defeated AI3 with 0 shields taking 1 points.
-AI3 with 0 shields was defeated by AI2 with 1 shields losing -1 points.
-AI3 and AI1 both have 0 strength, No points awarded.
+AI1 played [34mtheatre 2 points[0m 
+AI2 played [1;33mwest trading post trade-${WOBS} <[0m 
+AI3 played [33mclay pool B[0m 
+AI1 played [1;33meast trading post trade-${WOBS} >[0m 
+AI2 played [34mbaths 3 points[0m paying $1 to the player to his right.
+AI3 played [31mstockade 1[0m 
+AI1 with 0 shields was defeated by AI3 with 1 shields losing -1 points.
+AI1 and AI2 both have 0 strength, No points awarded.
+AI2 and AI1 both have 0 strength, No points awarded.
+AI2 with 0 shields was defeated by AI3 with 1 shields losing -1 points.
+AI3 with 1 shields defeated AI2 with 0 shields taking 1 points.
+AI3 with 1 shields defeated AI1 with 0 shields taking 1 points.
 Starting age II
-AI1 discarded an age II card for $3
-AI2 played [1;33mforum +resource{G/L/P}[0m paying $2 to the player to his left, $2 to the player to his right.
-AI3 discarded an age II card for $3
-AI1 discarded an age II card for $3
-AI2 discarded an age II card for $3
-AI3 discarded an age II card for $3
-AI1 discarded an age II card for $3
-AI2 played [1;33mcaravansery +resource{W/S/O/B}[0m paying $2 to the player to his left, $2 to the player to his right.
+AI1 played [92mschool T[0m paying $2 to the player to his right.
+AI2 played [92mlibrary T[0m paying $1 to the player to his left, $1 to the player to his right.
+AI3 played [37mloom L[0m 
+AI1 played [37mpress P[0m 
+AI2 played [92mlaboratory G[0m (for free with [92mworkshop G[0m)
+AI3 played [92mdispensary C[0m (for free with [92mapothecary C[0m)
+AI1 played [33mfoundry OO[0m paying $1 to the bank.
+AI2 played [33mbrickyard BB[0m paying $1 to the bank.
+AI3 played [37mglassworks G[0m 
+AI1 played [1;33mforum +resource{G/L/P}[0m (for free with [1;33meast trading post trade-${WOBS} >[0m)
+AI2 played [33mquarry SS[0m paying $1 to the bank.
 AI3 played [1;33mvineyard ${brown} <v>[0m 
-AI1 played [33mquarry SS[0m paying $1 to the bank.
-AI2 discarded an age II card for $3
-AI3 played [34mtemple 3 points[0m paying $1 to the player to his right.
-AI1 played [34mstatue 4 points[0m (for free with [34mtheatre 2 points[0m)
-AI2 discarded an age II card for $3
-AI3 discarded an age II card for $3
-AI1 played [33mbrickyard BB[0m paying $1 to the bank.
-AI2 played [92mlibrary T[0m 
-AI3 played [34maqueduct 5 points[0m paying $4 to the player to his right.
-AI1 and AI3 both have 0 strength, No points awarded.
-AI1 with 0 shields was defeated by AI2 with 1 shields losing -1 points.
-AI2 with 1 shields defeated AI1 with 0 shields taking 3 points.
-AI2 with 1 shields defeated AI3 with 0 shields taking 3 points.
-AI3 with 0 shields was defeated by AI2 with 1 shields losing -1 points.
-AI3 and AI1 both have 0 strength, No points awarded.
+AI1 played [34mcourthouse 4 points[0m (for free with [92mscriptorium T[0m)
+AI2 played [34maqueduct 5 points[0m (for free with [34mbaths 3 points[0m)
+AI3 played [33msawmill WW[0m paying $1 to the bank.
+AI1 played [1;33mcaravansery +resource{W/S/O/B}[0m paying $1 to the player to his left.
+AI2 played [31mwalls 2[0m paying $1 to the player to his right.
+AI3 played [34mtemple 3 points[0m 
+AI1 with 0 shields was defeated by AI3 with 1 shields losing -1 points.
+AI1 with 0 shields was defeated by AI2 with 2 shields losing -1 points.
+AI2 with 2 shields defeated AI1 with 0 shields taking 3 points.
+AI2 with 2 shields defeated AI3 with 1 shields taking 3 points.
+AI3 with 1 shields was defeated by AI2 with 2 shields losing -1 points.
+AI3 with 1 shields defeated AI1 with 0 shields taking 3 points.
 Starting age III
-AI1 played [1;33mhaven $V{brown}[0m paying $2 to the player to his left.
+AI1 played [1;33mhaven $V{brown}[0m (for free with [1;33mforum +resource{G/L/P}[0m)
+AI2 played [1;33mlighthouse $V{wonder}[0m 
+AI3 played [1;33marena $$$V{yellow}[0m (for free with [92mdispensary C[0m)
+AI1 played [34mpalace 8 points[0m paying $1 to the player to his left.
 AI2 discarded an age III card for $3
-AI3 discarded an age III card for $3
-AI1 played [1;33mlighthouse $V{wonder}[0m 
+AI3 played [31marsenal 3[0m paying $2 to the player to his right.
+AI1 played [34mpantheon 7 points[0m paying $1 to the player to his left.
+AI2 played [31msiege workshop 3[0m (for free with [92mlaboratory G[0m)
+AI3 played [34msenate 6 points[0m paying $2 to the player to his right.
+AI1 played [92macademy C[0m (for free with [92mschool T[0m)
+AI2 played [34mtown hall 6 points[0m paying $2 to the player to his left.
+AI3 played [31mfortification 3[0m paying $4 to the player to his right.
+AI1 played [92muniversity T[0m 
+AI2 played [92mlodge C[0m paying $1 to the player to his right.
+AI3 played [92mstudy G[0m paying $2 to the player to his right.
+AI1 played [92mobservatory G[0m 
 AI2 discarded an age III card for $3
-AI3 played [35mworkers guild V{brown} <>[0m paying $2 to the player to his right.
-AI1 played [34msenate 6 points[0m paying $2 to the player to his left.
-AI2 discarded an age III card for $3
-AI3 discarded an age III card for $3
-AI1 played [34mpalace 8 points[0m paying $2 to the player to his left.
-AI2 discarded an age III card for $3
-AI3 discarded an age III card for $3
-AI1 played [1;33marena $$$V{yellow}[0m paying $2 to the player to his left.
-AI2 played [35mshipowners guild V{brown | grey | purple}[0m paying $2 to the player to his left, $2 to the player to his right.
-AI3 discarded an age III card for $3
-AI1 played [31msiege workshop 3[0m 
-AI2 played [35mcraftsmens guild VV{grey} <>[0m paying $2 to the player to his right.
-AI3 played [31marsenal 3[0m paying $1 to the player to his right.
-AI1 and AI3 both have 3 strength, No points awarded.
-AI1 with 3 shields defeated AI2 with 1 shields taking 5 points.
-AI2 with 1 shields was defeated by AI1 with 3 shields losing -1 points.
-AI2 with 1 shields was defeated by AI3 with 3 shields losing -1 points.
-AI3 with 3 shields defeated AI2 with 1 shields taking 5 points.
-AI3 and AI1 both have 3 strength, No points awarded.
-AI1 Final score: Blue: 20, Green: 0, red: 3, yellow: 7, purple: 0, $: 8, total: 38
-AI2 Final score: Blue: 2, Green: 2, red: 6, yellow: 0, purple: 9, $: 2, total: 21
-AI3 Final score: Blue: 8, Green: 0, red: 3, yellow: 0, purple: 5, $: 14, total: 30
+AI3 played [35mscientist guild +science{C / T / G}[0m paying $2 to the player to his right.
+AI1 with 0 shields was defeated by AI3 with 7 shields losing -1 points.
+AI1 with 0 shields was defeated by AI2 with 5 shields losing -1 points.
+AI2 with 5 shields defeated AI1 with 0 shields taking 5 points.
+AI2 with 5 shields was defeated by AI3 with 7 shields losing -1 points.
+AI3 with 7 shields defeated AI2 with 5 shields taking 5 points.
+AI3 with 7 shields defeated AI1 with 0 shields taking 5 points.
+AI1 Final score: Blue: 21, Green: 18, red: -5, yellow: 3, purple: 0, $: 5, total: 42
+AI2 Final score: Blue: 14, Green: 13, red: 9, yellow: 0, purple: 0, $: 1, total: 37
+AI3 Final score: Blue: 9, Green: 13, red: 14, yellow: 2, purple: 0, $: 0, total: 38

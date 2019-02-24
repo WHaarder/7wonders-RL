@@ -13,7 +13,8 @@
 from common import *
 
 class Card:
-	def __init__(self, name, age, cost, players):
+	def __init__(self, idx, name, age, cost, players):
+		self.id = idx
 		self.name = name
 		self.age = age
 		self.players = players
