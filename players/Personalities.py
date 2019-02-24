@@ -61,7 +61,8 @@ class GoodAI(Personality):
                         ch = options.index(o)
                     else:
                         ch = 0
-        self.choice.append([ch, [(o[0], o[1].id) for o in options]])
+        # self.choice.append([ch, [(o[0], o[1].id) for o in options]])
+        self.choice.append([ch, [o[0] * 1000 + o[1].id for o in options]])
         return ch
         # return random.randint(0, len(options) - 1)
 

@@ -1,15 +1,3 @@
-#!/usr/bin/python
-#
-# Copyright 2015 - Jonathan Gordon
-#
-# This program is free software; you can redistribute it and/or
-# modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2
-# of the License, or (at your option) any later version.
-#
-# This software is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY
-# KIND, either express or implied.
-
 import math
 import os
 import random
@@ -182,21 +170,12 @@ init_games()
 players = [("AI1", Personalities.GoodAI), ("AI2", Personalities.GoodAI), ("AI3", Personalities.GoodAI)]
 game = GameState(players)
 
+
+
 for i in range(100):
     game.logger.card_list = __all_cards.copy()
     game.setup_age_cards(__all_cards.copy())
     game.game_loop()
     for p in game.players:
         print(p.personality.choice)
-    # print('================NEW GAME================')
     game.reset()
-
-#p = game.players[0]
-#p.money = 10
-#p.tableau += [find_card(__all_cards, "quarry"), find_card(__all_cards, "clay pit"), find_card(__all_cards, "press")]
-#game.players[1].tableau += [find_card(__all_cards, "glassworks"), find_card(__all_cards, "sawmill"), find_card(__all_cards, "foundry")]
-
-#p.buy_card(find_card(__all_cards, "fortification"), game.players[1], game.players[2])
-
-#game.players[0].tableau += [find_card(__all_cards, "study"), find_card(__all_cards, "lodge"), find_card(__all_cards, "scientist guild")]
-#print helpers.score_science(game.players[0])
