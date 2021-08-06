@@ -13,11 +13,6 @@
 from collections import deque
 from common import *
 import cards
-from players import Personalities
-
-def do_print(personality, text):
-	if personality.__class__.__name__ is 'Human':
-		print(text)
 
 class Player:
 	def __init__(self, name):
@@ -61,25 +56,24 @@ class Player:
 			if False:#self.wonder.built_stages < 3: #FIXMEself.wonder.stages:
 				options.append((ACTION_STAGEWONDER, card))
 		i = 0
-		do_print(self.personality, "-=================-")
+		#print ("-=================-")
 		
 		options = sorted(options, key=lambda x: {CARDS_GREY:0, CARDS_BROWN:1, CARDS_YELLOW:2, CARDS_BLUE:3, CARDS_RED:4, CARDS_GREEN:5, CARDS_PURPLE:6}[x[1].get_colour()])
 		for o in options:
 			actions = { ACTION_PLAYCARD:"Play", ACTION_DISCARD:"Discard", ACTION_STAGEWONDER:"Stage" }
 			card = o[1]
-			# print "[%d]: %s\t%s\t%s" % (i, actions[o[0]], card.get_cost_as_string(), card.pretty_print_name())
-			do_print(self.personality, '[{}]: {}\t{}\t{}'.format(i, actions[o[0]], card.get_cost_as_string(), card.pretty_print_name()))
+			#print( "[%d]: %s\t%s\t%s" % (i, actions[o[0]], card.get_cost_as_string(), card.pretty_print_name()))
 			i += 1
-		do_print(self.personality, "-=================-")
+		#print ("-=================-")
 
-		return options[self.personality.make_choice(options)]
+		return options[self.personality.make_choice(options, self.tableau)]
 	
 	def print_tableau(self):
 		cards = { CARDS_BROWN:[], CARDS_GREY:[], CARDS_YELLOW:[], CARDS_BLUE:[], CARDS_RED:[], CARDS_GREEN:[], CARDS_PURPLE:[] }
-		do_print(self.personality, "You have ${}".format(self.money))
-		do_print(self.personality, "War points: {}".format(self.military))
-		do_print(self.personality, self.west_trade_prices)
-		do_print(self.personality, self.east_trade_prices)
+		#print ("You have $%d" % (self.money))
+		#print ("War points: %s" % (self.military))
+		#print (self.west_trade_prices)
+		#print (self.east_trade_prices)
 		for c in self.get_cards():
 			cards[c.get_colour()].append(c)
 		
@@ -92,12 +86,12 @@ class Player:
 			line = { CARDS_BROWN:"\t", CARDS_GREY:"\t", CARDS_YELLOW:"\t", CARDS_BLUE:"\t", CARDS_RED:"\t", CARDS_GREEN:"\t", CARDS_PURPLE:"\t" }
 			for colour in [CARDS_BROWN, CARDS_GREY, CARDS_YELLOW, CARDS_BLUE, CARDS_RED, CARDS_GREEN, CARDS_PURPLE]:
 				if len(cards[colour]) > biggest_deck - 1 - i:
-					line[colour] = "{}".format(cards[colour][biggest_deck - 1 - i].pretty_print_name())
+					line[colour] = "%s" % (cards[colour][biggest_deck - 1 - i].pretty_print_name())
 				else:
 					line[colour] = "        "
 			
-			# print "%s\t%s\t%s\t%s\t%s\t%s\t%s" % ( line[CARDS_BROWN], line[CARDS_GREY], line[CARDS_YELLOW], line[CARDS_BLUE], line[CARDS_RED], line[CARDS_GREEN],line[CARDS_PURPLE])
-			do_print(self.personality, "{}\t{}\t{}\t{}\t{}\t{}\t{}".format(line[CARDS_BROWN], line[CARDS_GREY], line[CARDS_YELLOW], line[CARDS_BLUE], line[CARDS_RED], line[CARDS_GREEN],line[CARDS_PURPLE]))
+			print ("%s\t%s\t%s\t%s\t%s\t%s\t%s" % ( line[CARDS_BROWN], line[CARDS_GREY], line[CARDS_YELLOW], line[CARDS_BLUE], line[CARDS_RED], line[CARDS_GREEN],line[CARDS_PURPLE]))
+		
 	
 	def set_wonder(self, wonder):
 		self.wonder = wonder
@@ -206,8 +200,8 @@ class CardPurchaseUse:
 	
 	def __repr__(self):
 		if len(self.card.get_info()) == 1:
-			return "{}".format(self.card)
-		return "{} -> {} * {}".format(self.card, self.resource, self.count)
+			return "%s"% (self.card)
+		return "%s -> %s * %d" % (self.card, self.resource, self.count)
 			
 class CardPurchaseOption:
 	def __init__(self, cards, coins, west_trades, east_trades):
@@ -237,4 +231,4 @@ class CardPurchaseOption:
 		return True
 
 	def __repr__(self):
-		return "{ (total: ${})\n\t{}\n\t${}\n\tWEST:{}\n\tEAST:{}\n}".format(self.total_cost, self.cards, self.coins, self.west_trades, self.east_trades)
+		return "{ (total: $%d)\n\t%s\n\t$%d\n\tWEST:%s\n\tEAST:%s\n}" % (self.total_cost, self.cards, self.coins, self.west_trades, self.east_trades)

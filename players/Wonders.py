@@ -52,7 +52,7 @@ def read_wonders_file(filename):
 			side_b = x[4 + count * 2:]
 			if w.parse_stages(side_a, True) and w.parse_stages(side_b, False):
 				wonders.append(w)
-	print("Loaded {} wonders".format(len(wonders)))
+	print ("Loaded %d wonders" % ( len(wonders)))
 	return wonders
 
 		

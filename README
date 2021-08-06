@@ -1,13 +1,6 @@
-This is an implementation of the 7 wonders board game by Antoine Bauza.
-
-TODO List:
-
-* Implement Wonders
-* Implement a UI - hopefully a textbased web design similar to the isotropic.org style
-* Fix buying cards so the money is actually spent
-* Leaders expansion
-* Cities expansion
-* Babel expansion!
-
+This is a fork of the 7 wonders board game implementation by Antoine Bauza.
 
 To run the game just run $ ./game.py in the chceckout directory
+
+Notes on the fork:
+An q-learning RL agent is added on top of the implementation to play the game.
