@@ -3,4 +3,4 @@ This is a fork of the 7 wonders board game implementation by Antoine Bauza.
 To run the game just run $ ./game.py in the chceckout directory
 
 Notes on the fork:
-An q-learning RL agent is added on top of the implementation to play the game.
+An q-learning reinforcement learning agent is added on top of the implementation to play the game.
